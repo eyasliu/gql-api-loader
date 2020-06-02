@@ -1,0 +1,38 @@
+{
+  "name": "gql-api-loader",
+  "version": "0.2.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "example": "webpack-dev-server --config example/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lib": "babel ./src --out-dir ./lib"
+  },
+  "author": "Eyasliu <eyasliu@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyasliu/gql-api-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eyasliu/gql-api-loader/issues"
+  },
+  "homepage": "https://github.com/eyasliu/gql-api-loader#readme",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "dependencies": {
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "lodash": "^4.17.15",
+    "unfetch": "^4.1.0"
+  }
+}

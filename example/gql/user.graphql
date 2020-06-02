@@ -1,0 +1,22 @@
+query check {
+  me {
+    uid
+    userName
+    nickName
+  }
+}
+
+mutation create($param: UserParam) {
+  userCreate(input: $param) {
+    uid
+    userName
+    nickName
+  }
+}
+
+mutation update($uid: int64, $param: UserParam) {
+  userUpdate(uid: $uid, input: $param) {
+    uid
+    userName
+  }
+}
