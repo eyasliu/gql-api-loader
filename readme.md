@@ -24,7 +24,7 @@ npm install --save-dev gql-api-loader
       {
         test: /\.(graphql|gql)$/,
         // use: { loader: 'gq-loader'}, // 最简单配置
-        use: { loader: 'gq-loader'
+        use: { loader: 'gql-api-loader'
           options: { // 选项
             endpoint: '/graphql' // 可选，该值可以再运行时改变，这里可以理解为是一个默认值
           }
@@ -80,7 +80,7 @@ mutation create($param: UserParam) {
 在业务代码中引用，调用接口
 
 ```js
-import gqlConfig from 'gql-api-loader/config'
+import gqlConfig from 'gql-api-loader/lib/config'
 gqlConfig({
   endpoint: 'http://127.0.0.1:9000/gql', // graphql 的 url
   credentials: 'include', // fetch 参数的 credentials 配置，是否携带 cookies
